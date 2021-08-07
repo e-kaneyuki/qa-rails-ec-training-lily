@@ -17,7 +17,6 @@ default: &default
   password: <%= ENV.fetch("MYSQL_PASSWORD", "password") %>
   host: <%= ENV.fetch("MYSQL_HOST", "db") %>
 
-
 development:
   <<: *default
   database: myapp_development
